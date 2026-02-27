@@ -1,0 +1,224 @@
+/* --- ESTILOS CSS --- */
+
+/* Paleta de colores basada en las imágenes proporcionadas */
+:root {
+    --verde-oscuro: #4d5d4b;
+    --rosa-claro: #ffe4e6;
+    --rosa-fuerte: #d9a7ac;
+    --fondo-crema: #fdf5f0;
+    --blanco: #ffffff;
+}
+
+body {
+    background-color: #fdf5f0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+/* Contenedor general para limitar el ancho y centrar */
+.main-container {
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* --- Estilos Cabecera (Imagen 1) --- */
+.tarjeta-presentacion {
+    background-color: var(--fondo-crema);
+    display: flex;
+    padding: 40px;
+    border-radius: 25px;
+    gap: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.columna-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.saludo-badge {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+    width: fit-content;
+}
+
+.caja-nombre {
+    background-color: var(--rosa-claro);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+
+.nombre-principal {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--verde-oscuro);
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.profesion {
+    color: var(--rosa-fuerte);
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+
+.barra-redes {
+    background-color: var(--verde-oscuro);
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icono-circular {
+    background-color: var(--rosa-fuerte);
+    color: var(--blanco);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.marco-foto {
+    flex: 0.8;
+    border: 8px solid var(--rosa-fuerte);
+    border-radius: 35px;
+    background-color: var(--rosa-claro);
+    min-height: 250px;
+}
+
+/* --- Estilos Cuerpo (Imagen 2) --- */
+
+.seccion-proyectos {
+    margin-top: 30px;
+}
+
+.contenedor-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para que se acomoden en móvil */
+}
+
+.card-proyecto {
+    background-color: var(--rosa-claro);
+    border: 3px solid var(--rosa-fuerte);
+    border-radius: 20px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.imagen-proyecto {
+    background-color: var(--rosa-fuerte);
+    border-radius: 15px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.titulo-seccion {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    padding: 10px 30px;
+    border-radius: 50px;
+    width: fit-content;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.contenedor-bocadillos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.bocadillo {
+    background-color: var(--rosa-claro);
+    border-radius: 20px;
+    width: 250px;
+    height: 150px;
+    padding: 15px;
+    border: 2px solid var(--rosa-fuerte);
+}
+
+.habilidades-experiencia {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.columna-habilidades {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    flex: 1;
+    min-width: 280px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.columna-experiencia {
+    background-color: var(--rosa-fuerte);
+    flex: 1;
+    min-width: 280px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card-experiencia {
+    background-color: var(--rosa-claro);
+    border-radius: 15px;
+    height: 80px;
+    margin-bottom: 10px;
+    color: var(--verde-oscuro);
+    padding: 10px;
+}
+
+/* --- Estilos Pie de Página (Imagen 3) --- */
+footer {
+    background-color: var(--fondo-crema);
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    background-color: var(--rosa-claro);
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid var(--rosa-fuerte);
+}
+
+.copyright {
+    color: var(--verde-oscuro);
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtitle-footer {
+    color: var(--rosa-fuerte);
+    font-size: 0.9rem;
+    margin-top: 5px;
+    font-style: italic;
+}

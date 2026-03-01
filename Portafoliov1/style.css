@@ -1,6 +1,5 @@
 /* --- ESTILOS CSS --- */
 
-/* Paleta de colores basada en las imágenes proporcionadas */
 :root {
     --verde-oscuro: #4d5d4b;
     --rosa-claro: #ffe4e6;
@@ -19,20 +18,18 @@ body {
     align-items: stretch;
 }
 
-/* Contenedor general para limitar el ancho y centrar */
 .main-container {
     width: 100%;
-    max-width: 1400px;
+    max-width: flex;
 }
 
-/* --- Estilos Cabecera (Imagen 1) --- */
 .tarjeta-presentacion {
     background-color: var(--fondo-crema);
     display: flex;
     padding: 40px;
     border-radius: 25px;
     gap: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .columna-info {
@@ -45,16 +42,16 @@ body {
 .saludo-badge {
     background-color: var(--verde-oscuro);
     color: var(--blanco);
-    padding: 10px 25px;
+    padding: 20px 25px;
     border-radius: 50px;
     font-family: 'Caveat', cursive;
     font-size: 1.5rem;
-    width: fit-content;
+    width: flex;
 }
 
 .caja-nombre {
     background-color: var(--rosa-claro);
-    padding: 20px;
+    padding: 70px;
     border-radius: 20px;
     margin: 15px 0;
 }
@@ -75,7 +72,7 @@ body {
 
 .barra-redes {
     background-color: var(--verde-oscuro);
-    padding: 10px;
+    padding: 20px;
     border-radius: 50px;
     display: flex;
     justify-content: space-around;
@@ -94,15 +91,20 @@ body {
     font-size: 0.9rem;
 }
 
+.icono-circular a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
 .marco-foto {
     flex: 0.8;
-    border: 8px solid var(--rosa-fuerte);
+    border: 5px solid var(--rosa-fuerte);
     border-radius: 35px;
     background-color: var(--rosa-claro);
     min-height: 250px;
 }
 
-/* --- Estilos Cuerpo (Imagen 2) --- */
 
 .seccion-proyectos {
     margin-top: 30px;
@@ -112,23 +114,24 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Para que se acomoden en móvil */
+    flex-wrap: wrap;
 }
 
 .card-proyecto {
     background-color: var(--rosa-claro);
-    border: 3px solid var(--rosa-fuerte);
+    border: 2px solid var(--fondo-crema);
     border-radius: 20px;
     padding: 15px;
-    width: 200px;
+    width: 250px;
     text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
 }
 
 .imagen-proyecto {
-    background-color: var(--rosa-fuerte);
-    border-radius: 15px;
-    height: 150px;
-    margin-bottom: 10px;
+    background-color: var(--fondo-crema);
+    border-radius: 20px;
+    height: 250px;
+    margin-bottom: 80px;
 }
 
 .titulo-seccion {
@@ -193,7 +196,6 @@ body {
     padding: 10px;
 }
 
-/* --- Estilos Pie de Página (Imagen 3) --- */
 footer {
     background-color: var(--fondo-crema);
     padding: 20px;
@@ -221,4 +223,46 @@ footer {
     font-size: 0.9rem;
     margin-top: 5px;
     font-style: italic;
+}
+/*MEDIA QUERYS*/
+@media screen and (max-width: 600px){
+    nav ul il{
+        display: block;
+        margin: 10px 0;
+    }
+    .proyecto-card{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 900px){
+    #secc-proyectos{
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .proyecto-card{
+        width: 45%;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+}
+@media (prefers-color-scheme: dark){
+    body{
+        background: #4d5d4b;
+        color: #fdf5f0;
+    }
+    header{
+        background: #4d5d4b;
+    }
+    .proyecto-card{
+        background: #4d5d4b;
+        border: 1px solid #4d5d4b;
+        color: #fdf5f0;
+    }
+    .proyecto-card a{
+        color: #90caf9;
+    }
+    .columna-habilidades{
+        background: #fdf5f0;
+    }
 }

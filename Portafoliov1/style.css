@@ -199,12 +199,34 @@ body.modo-oscuro{
 .imagen-proyecto {
     background-color: var(--fondo-crema);
     border-radius: 20px;
-    height: 150px; 
     margin-bottom: 20px;
+    overflow: hidden;
+    display: bl;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-proyecto img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card-proyecto{
+    background-color: var(--rosa-claro);
+    border-radius: 20px;
+    padding: 15px;
+    width: 280px;      /* Puedes ajustar el ancho de la tarjeta aquí */
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
 }
 
 .titulo-seccion {
-    background-color: var(--verde-oscuro);
+    background-color: var(--rosa-fuerte);
     color: var(--blanco);
     font-family: 'Playfair Display', serif;
     font-style: italic;
@@ -237,8 +259,7 @@ body.modo-oscuro{
 }
 
 .columna-habilidades {
-    background-color: var(--verde-oscuro);
-    color: var(--blanco);
+    background-color: var(--rosa-claro);
     flex: 1;
     min-width: 280px;
     border-radius: 20px;
@@ -252,11 +273,13 @@ body.modo-oscuro{
     border-radius: 20px;
     padding: 20px;
 }
+.card-experiencia{
+
+}
 
 footer {
     text-align: center;
     padding: 40px 0;
-    color: var(--verde-oscuro);
     margin-top: 30px;
 }
 
